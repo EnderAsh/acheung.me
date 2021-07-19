@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap');
+
+body {
+  font-weight: 400;
+  font-family: Nunito;
+  font-style: normal;
+  font-size: 13pt;
+}
+
+.portfolio {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+
+  .portfolio__header {
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .react-tabs {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .react-tabs__tab-panel {
+    flex-grow: 1;
+  }
+}
+
+@mixin tab-panel {
+  min-height: 100%;
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+@mixin full-background($bg_url) {
+  background-image: url($bg_url);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.tab__resume {
+  @include tab-panel;
+  @include full-background('../../images/background_resume.svg');
+  display: flex;
+  flex-direction: column;
+}
+
+.tab__contact {
+  @include tab-panel;
+  @include full-background('../../images/background_contact.svg');
+  h2 {
+    margin: 0;
+    padding-top: 1em;
+    text-align: center;
+    font-weight: 400;
+  }
+}
+
+.tab__home {
+  @include tab-panel;
+  @include full-background('../../images/background_home.svg');
+  h2, h3{
+    margin: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-weight: 400;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    gap: 2em;
+    grid-template-areas: 
+    "ddr ddr ddr ddr"
+    "clock clock clock clock"
+    "laptop-holder laptop-holder hotdog hotdog"
+    "light-switch light-switch light-switch light-switch"
+    "flowers flowers flowers robot"
+    "heart heart pencil-holder pencil-holder"
+    "hh hh hh hh"
+    "undertale undertale undertale trebuchet"
+    "ferris-wheel ferris-wheel ferris-wheel ferris-wheel"
+    "eiffel-tower eiffel-tower nodes nodes";
+
+    @media(max-width: 1024px) {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "ddr"
+      "clock"
+      "laptop-holder"
+      "hotdog"
+      "light-switch"
+      "flowers"
+      "robot"
+      "heart"
+      "pencil-holder"
+      "hh"
+      "undertale"
+      "trebuchet"
+      "ferris-wheel"
+      "eiffel-tower"
+      "nodes";
+    }
+  }
+}

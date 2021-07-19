@@ -1,0 +1,111 @@
+.slick-prev:before, .slick-next:before {
+  content: '';
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-slider {
+  padding: 0 50px;
+}
+
+.slick-dots {
+  // account for 50px padding in slick-slider
+  // why does box-sizing: content-box not work?
+  transform: translateX(-50px);
+}
+
+// align carousel images vertically
+.slick-track {
+  display: flex;
+  align-items: center;
+}
+
+// align images in the of the carousel
+.slick-initialized .slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 10px 10px rgb(0 0 0 / 20%);
+  padding: 2em;
+
+  // grid area variants
+  display: grid;
+
+  &__large {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header header"
+                        "details carousel carousel carousel";
+
+    @media(max-width: 1024px) {
+      grid-template-areas: "header header header header"
+                          "details details details details"
+                          "carousel carousel carousel carousel";
+    }
+  }
+
+  &__small-1pic {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr 15vw;
+    grid-template-areas: "header header"
+                         "details details"
+                         "img1 img1";
+  }
+
+  &__small-2pic {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content 1fr 15vw;
+    grid-gap: 1em;
+    grid-template-areas: "header header"
+                         "details details"
+                         "img1 img2";
+  }
+
+  &__header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+
+    h2, h3 {
+      padding: 0;
+    }
+  }
+
+  &__date {
+    display: flex;
+    align-items: center;
+    text-align: right;
+  }
+
+  &__details {
+    grid-area: details;
+  }
+
+  &__carousel {
+    grid-area: carousel;
+    // center carousel vertically
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__img1 {
+    grid-area: img1;
+  }
+
+  &__img2 {
+    grid-area: img2;
+  }
+}
