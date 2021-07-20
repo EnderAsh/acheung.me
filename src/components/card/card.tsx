@@ -64,7 +64,7 @@ export function Card(props: {
     };
 
     extra.push(
-      <div className="card__carousel">
+      <div className="card__carousel" key={`${name}__carousel`}>
         <Slider
           {...sliderSettings}
           prevArrow={<SliderArrow />}
@@ -75,9 +75,17 @@ export function Card(props: {
       </div>
     );
   } else {
-    extra.push(<div className="card__img1">{images[0]}</div>);
+    extra.push(
+      <div className="card__img1" key={`${name}__img1`}>
+        {images[0]}
+      </div>
+    );
     if (variant === "small-2pic") {
-      extra.push(<div className="card__img2">{images[1]}</div>);
+      extra.push(
+        <div className="card__img2" key={`${name}__img2`}>
+          {images[1]}
+        </div>
+      );
     }
   }
 

@@ -74,14 +74,27 @@ function App() {
                 date="2019-Present"
                 images={[
                   <Image
+                    key="ddrimg1"
                     src={DdrImg1}
                     caption="Artistic rendering of step pad"
                   />,
-                  <Image src={DdrImg2} caption="Model of cab" />,
-                  <Image src={DdrImg3} caption="Drawings of panels" />,
-                  <Image src={DdrImg4} caption="Step pad prototype" />,
-                  <Image src={DdrImg5} caption="Pad actuation prototype" />,
-                  <Image src={DdrImg6} caption="Pad drawing" />,
+                  <Image key="ddrimg2" src={DdrImg2} caption="Model of cab" />,
+                  <Image
+                    key="ddrimg3"
+                    src={DdrImg3}
+                    caption="Drawings of panels"
+                  />,
+                  <Image
+                    key="ddrimg4"
+                    src={DdrImg4}
+                    caption="Step pad prototype"
+                  />,
+                  <Image
+                    key="ddrimg5"
+                    src={DdrImg5}
+                    caption="Pad actuation prototype"
+                  />,
+                  <Image key="ddrimg6" src={DdrImg6} caption="Pad drawing" />,
                 ]}
                 details="Student-made Dance Dance Revolution machine, including cabinet and 2 dance pads.
                 This project is currently in progress. I am leading the building and mechanical engineering part,
@@ -95,16 +108,26 @@ function App() {
                 name="Clock"
                 date="Aug 2020"
                 images={[
-                  <Image src={ClockImg1} caption="Finished product" />,
                   <Image
+                    key="clockimg1"
+                    src={ClockImg1}
+                    caption="Finished product"
+                  />,
+                  <Image
+                    key="clockimg2"
                     src={ClockImg2}
                     caption="Arduino held on back of clock"
                   />,
                   <Image
+                    key="clockimg3"
                     src={ClockImg3}
                     caption="Paper to diffuse and dampen light"
                   />,
-                  <Image src={ClockImg4} caption="Back of clock" />,
+                  <Image
+                    key="clockimg4"
+                    src={ClockImg4}
+                    caption="Back of clock"
+                  />,
                 ]}
                 details="LED Matrix clock, with 3D printed frame and various hardware.
                 I designed in SolidWorks and printed the frame with my Prusa for an 8x32 LED matrix.
@@ -148,6 +171,7 @@ function App() {
                 date="Aug 2020"
                 images={[
                   <AnimatedImage
+                    key="lightswitchimg"
                     src={LightSwitchImg}
                     caption="Demonstration of light switch mechanism"
                   />,
@@ -240,19 +264,38 @@ function App() {
                 name="Headphones Holder"
                 date="Nov 2017"
                 images={[
-                  <Image src={HeadphoneImg1} caption="Finished product" />,
                   <Image
+                    key="headphoneimg1"
+                    src={HeadphoneImg1}
+                    caption="Finished product"
+                  />,
+                  <Image
+                    key="headphoneimg2"
                     src={HeadphoneImg2}
                     caption="Close up of painted &amp; sanded product"
                   />,
-                  <Image src={HeadphoneImg3} caption="Mini prototype" />,
-                  <Image src={HeadphoneImg4} caption="Primer coat on" />,
                   <Image
+                    key="headphoneimg3"
+                    src={HeadphoneImg3}
+                    caption="Mini prototype"
+                  />,
+                  <Image
+                    key="headphoneimg4"
+                    src={HeadphoneImg4}
+                    caption="Primer coat on"
+                  />,
+                  <Image
+                    key="headphoneimg5"
                     src={HeadphoneImg5}
                     caption="Fresh off the 3D printer"
                   />,
-                  <Image src={HeadphoneImg6} caption="Fresh coat of paint" />,
                   <Image
+                    key="headphoneimg6"
+                    src={HeadphoneImg6}
+                    caption="Fresh coat of paint"
+                  />,
+                  <Image
+                    key="headphoneimg7"
                     src={HeadphoneImg7}
                     caption="Epoxy to cover layer lines"
                   />,
@@ -297,19 +340,30 @@ function App() {
                 date="Oct 2017"
                 images={[
                   <AnimatedImage
+                    key="ferrisimg1"
                     src={FerrisImg1}
                     caption="Ferris wheel in motion"
                   />,
                   <Image
+                    key="ferrisimg2"
                     src={FerrisImg2}
                     caption="Paper cutout of locking mechanism"
                   />,
-                  <Image src={FerrisImg3} caption="Drawing of design" />,
                   <Image
+                    key="ferrisimg3"
+                    src={FerrisImg3}
+                    caption="Drawing of design"
+                  />,
+                  <Image
+                    key="ferrisimg4"
                     src={FerrisImg4}
                     caption="Parts to laser cut for one car"
                   />,
-                  <Image src={FerrisImg5} caption="Finished product" />,
+                  <Image
+                    key="ferrisimg5"
+                    src={FerrisImg5}
+                    caption="Finished product"
+                  />,
                 ]}
                 details='My biggest laser cutter project, with all the colors of acrylic available. It was completely made of
                 1/8" acrylic, no glue, all snap fits. The cars were the hardest part - I wanted them curved but obviously the

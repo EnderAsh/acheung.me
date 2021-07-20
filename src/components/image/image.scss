@@ -1,3 +1,13 @@
+@mixin show-caption {
+  transform: translateY(-100%);
+  visibility: visible;
+}
+
+// always show caption if in the modal, otherwise show only if on large screens
+.react-responsive-modal-modal .image:hover .image__caption {
+  @include show-caption;
+}
+
 .image {
   margin: 0;
   overflow: hidden;
@@ -19,9 +29,10 @@
     object-fit: contain;
   }
 
-  &:hover &__caption {
-    transform: translateY(-100%);
-    visibility: visible;
+  @media(min-width: 1024px) {
+    &:hover &__caption {
+      @include show-caption;
+    }
   }
 
   &__caption {
