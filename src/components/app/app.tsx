@@ -47,6 +47,14 @@ import EiffelImg1 from "../../images/eiffel_tower_1.jpg";
 import EiffelImg2 from "../../images/eiffel_tower_2.jpg";
 import NodesImg1 from "../../images/nodes_1.jpg";
 import NodesImg2 from "../../images/nodes_2.jpg";
+import StringArtImg1 from "../../images/stringart_1.jpg";
+import StringArtImg2 from "../../images/stringart_2.png";
+import StringArtImg3 from "../../images/stringart_3.jpg";
+import StringArtImg4 from "../../images/stringart_4.jpg";
+import StringArtImg5 from "../../images/stringart_5.jpg";
+import ToteBagImg1 from "../../images/totebag_1.jpg";
+import EmbroideryImg1 from "../../images/embroidery_1.jpg";
+import EmbroideryImg2 from "../../images/embroidery_2.jpg";
 //#endregion
 
 function App() {
@@ -67,6 +75,67 @@ function App() {
           <div className="tab__home">
             <h2>My Projects</h2>
             <div className="card-grid">
+              <Card
+                style={{ gridArea: "embroidery" }}
+                variant="small-2pic"
+                name="Embroidery"
+                date="September 2021"
+                images={[
+                  <Image
+                    key="embroideryimg1"
+                    src={EmbroideryImg1}
+                    caption=""
+                  />,
+                  <Image
+                    key="embroideryimg2"
+                    src={EmbroideryImg2}
+                    caption=""
+                  />,
+                ]}
+                details="Chain stitch and stem stitch combination to customize apron. In our new
+                makerspace at Harvey Mudd College, student employees are encouraged to decorate
+                their uniform (denim aprons) with their name. Although we have several embroidery
+                machines, I decided that I would prefer to hand stitch my name as it could be more
+                customizable and visually interesting. I bought a skein of pretty multi-colored
+                embroidery floss and first did a chain stitch. Then, to fill in the holes and lock
+                in the threads in the back, I went back over my work with a stem stitch."
+              />
+              <Card
+                style={{ gridArea: "tote-bag" }}
+                variant="small-1pic"
+                name="Tote bag"
+                date="September 2021"
+                images={[
+                  <Image key="totebagimg1" src={ToteBagImg1} caption="" />,
+                ]}
+                details="Two-compartment original tote bag. I wanted to experiment with making
+                my own patterns and decided to sew a tote bag with a divider in the middle.
+                I hid as many raw edges as possible, but the goal of this project was rapid
+                prototyping, not perfection. If the fabric was stiffer, it would hold its shape
+                better, but as it stands now, the bag is a little floppy if nothing is in it."
+              />
+              <Card
+                style={{ gridArea: "string-art" }}
+                variant="large"
+                name="String Art"
+                date="August 2021"
+                images={[
+                  <Image key="stringartimg1" src={StringArtImg1} caption="" />,
+                  <Image key="stringartimg2" src={StringArtImg2} caption="" />,
+                  <Image key="stringartimg3" src={StringArtImg3} caption="" />,
+                  <Image key="stringartimg4" src={StringArtImg4} caption="" />,
+                  <Image key="stringartimg5" src={StringArtImg5} caption="" />,
+                ]}
+                details="Piece of wall art that evokes the image of a leaf made of a wood
+                plaque, tacks, and yarn. I planned out the design in Adobe Illustrator,
+                trying to take advantage of how straight lines can form curves when angled
+                against each other. In order to accurately drill holes and hammer in nails,
+                I printed and taped a template based on my digital design. I also numbered
+                the nails and created a list of instructions on how to string the yarn
+                so the design was easier to execute. The border on the edges both adds
+                a finished look to the piece and locks down the loose ends from the
+                previous two layers. "
+              />
               <Card
                 style={{ gridArea: "ddr" }}
                 variant="large"

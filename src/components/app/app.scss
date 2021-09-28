@@ -73,6 +73,8 @@ body {
     grid-template-columns: 1fr 1fr 1fr 2fr;
     gap: 2em;
     grid-template-areas: 
+    "embroidery embroidery embroidery tote-bag"
+    "string-art string-art string-art string-art"
     "ddr ddr ddr ddr"
     "clock clock clock clock"
     "laptop-holder laptop-holder hotdog hotdog"
@@ -87,6 +89,9 @@ body {
     @media(max-width: 1024px) {
       grid-template-columns: 1fr;
       grid-template-areas:
+      "embroidery"
+      "tote-bag"
+      "string-art"
       "ddr"
       "clock"
       "laptop-holder"
