@@ -84,12 +84,12 @@ function App() {
                   <Image
                     key="embroideryimg1"
                     src={EmbroideryImg1}
-                    caption=""
+                    caption="Finished product"
                   />,
                   <Image
                     key="embroideryimg2"
                     src={EmbroideryImg2}
-                    caption=""
+                    caption="Cleaned up inside of apron"
                   />,
                 ]}
                 details="Chain stitch and stem stitch combination to customize apron. In our new
@@ -106,7 +106,11 @@ function App() {
                 name="Tote bag"
                 date="September 2021"
                 images={[
-                  <Image key="totebagimg1" src={ToteBagImg1} caption="" />,
+                  <Image
+                    key="totebagimg1"
+                    src={ToteBagImg1}
+                    caption="Finished product"
+                  />,
                 ]}
                 details="Two-compartment original tote bag. I wanted to experiment with making
                 my own patterns and decided to sew a tote bag with a divider in the middle.
@@ -120,11 +124,31 @@ function App() {
                 name="String Art"
                 date="August 2021"
                 images={[
-                  <Image key="stringartimg1" src={StringArtImg1} caption="" />,
-                  <Image key="stringartimg2" src={StringArtImg2} caption="" />,
-                  <Image key="stringartimg3" src={StringArtImg3} caption="" />,
-                  <Image key="stringartimg4" src={StringArtImg4} caption="" />,
-                  <Image key="stringartimg5" src={StringArtImg5} caption="" />,
+                  <Image
+                    key="stringartimg1"
+                    src={StringArtImg1}
+                    caption="Finished product"
+                  />,
+                  <Image
+                    key="stringartimg2"
+                    src={StringArtImg2}
+                    caption="Mockup in Adobe Illustrator"
+                  />,
+                  <Image
+                    key="stringartimg3"
+                    src={StringArtImg3}
+                    caption="Paper template taped to wood plaque"
+                  />,
+                  <Image
+                    key="stringartimg4"
+                    src={StringArtImg4}
+                    caption="First layer"
+                  />,
+                  <Image
+                    key="stringartimg5"
+                    src={StringArtImg5}
+                    caption="Second layer"
+                  />,
                 ]}
                 details="Piece of wall art that evokes the image of a leaf made of a wood
                 plaque, tacks, and yarn. I planned out the design in Adobe Illustrator,
