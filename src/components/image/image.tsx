@@ -29,13 +29,13 @@ export function Image(props: { src: string; caption: string }) {
 
   const imageElement = (
     <figure className="image" onClick={() => setModalOpen(true)}>
-      <LazyLoad height={500} offset={100}>
+      <LazyLoad offset={500}>
         <img src={src} alt={caption} />
+        {/* wrap caption to allow for content-box but also not use the size of padding in width */}
+        <div style={{ position: "relative" }}>
+          <figcaption className="image__caption">{caption}</figcaption>
+        </div>
       </LazyLoad>
-      {/* wrap caption to allow for content-box but also not use the size of padding in width */}
-      <div style={{ position: "relative" }}>
-        <figcaption className="image__caption">{caption}</figcaption>
-      </div>
     </figure>
   );
 

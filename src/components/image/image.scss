@@ -1,6 +1,8 @@
 @mixin show-caption {
   transform: translateY(-100%);
-  visibility: visible;
+  /* make it less obvious if isn't actually disappearing under the image */
+  /* (when text is popping in/out */
+  opacity: 1;  
 }
 
 // always show caption if in the modal, otherwise show only if on large screens
@@ -23,6 +25,14 @@
   height: 100%;
   width: 100%;
 
+  .lazyload-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+
   img, video {
     max-height: 100%;
     max-width: 100%;
@@ -36,7 +46,7 @@
   }
 
   &__caption {
-    visibility: hidden;
+    opacity: 0;
     position: absolute;
     width: 100%;
     text-align: center;
