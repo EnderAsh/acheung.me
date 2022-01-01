@@ -1,4 +1,3 @@
-import React from "react";
 import "./app.scss";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "../react-tabs/react-tabs.scss";
@@ -55,6 +54,11 @@ import StringArtImg5 from "../../images/stringart_5.jpg";
 import ToteBagImg1 from "../../images/totebag_1.jpg";
 import EmbroideryImg1 from "../../images/embroidery_1.jpg";
 import EmbroideryImg2 from "../../images/embroidery_2.jpg";
+import ChestImg1 from "../../images/chest_1.jpg";
+import ChestImg2 from "../../images/chest_2.jpeg";
+import ChestImg3 from "../../images/chest_3.jpeg";
+import ChestImg4 from "../../images/chest_4.jpeg";
+import ChestImg5 from "../../images/chest_5.png";
 //#endregion
 
 function App() {
@@ -75,6 +79,46 @@ function App() {
           <div className="tab__home">
             <h2>My Projects</h2>
             <div className="card-grid">
+              <Card
+                style={{ gridArea: "chest" }}
+                variant="large"
+                name="Treasure Chest"
+                date="Nov-Dec 2021"
+                link="/dead-mans-chest"
+                images={[
+                  <Image
+                    key="chestimg1"
+                    src={ChestImg1}
+                    caption="Finished product"
+                  />,
+                  <Image
+                    key="chestimg2"
+                    src={ChestImg2}
+                    caption="Lid pieces"
+                  />,
+                  <Image
+                    key="chestimg3"
+                    src={ChestImg3}
+                    caption="Sanded lid"
+                  />,
+                  <Image
+                    key="chestimg4"
+                    src={ChestImg4}
+                    caption="Details done"
+                  />,
+                  <Image
+                    key="chestimg5"
+                    src={ChestImg5}
+                    caption="Starting second coat of paint"
+                  />,
+                ]}
+                details="Pirates of the Caribbean prop replica of Davy Jones' chest. I'm still
+                working on designing and prototyping the mechanical elements that make parts of
+                the chest move when you open and close it. I've completed one pass of what the
+                outside will look like, including the construction process and the paint work in
+                the context of how you would make a theatre prop. I learned a lot while doing this
+                and I hope that all the mistakes I made will help make the next versions even better!"
+              />
               <Card
                 style={{ gridArea: "embroidery" }}
                 variant="small-2pic"

@@ -73,6 +73,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr 2fr;
     gap: 2em;
     grid-template-areas: 
+    "chest chest chest chest"
     "embroidery embroidery embroidery tote-bag"
     "string-art string-art string-art string-art"
     "ddr ddr ddr ddr"
@@ -89,6 +90,7 @@ body {
     @media(max-width: 1024px) {
       grid-template-columns: 1fr;
       grid-template-areas:
+      "chest"
       "embroidery"
       "tote-bag"
       "string-art"

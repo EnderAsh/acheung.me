@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { CSSProperties } from "react";
+import { Link } from "react-router-dom";
 
 function SliderArrow(props: {
   right?: boolean;
@@ -38,6 +39,7 @@ export function Card(props: {
   images: JSX.Element[];
   variant: "small-1pic" | "small-2pic" | "large";
   style?: CSSProperties;
+  link?: string;
 }) {
   const { name, date, details, images, variant } = props;
 
@@ -89,10 +91,19 @@ export function Card(props: {
     }
   }
 
+  let nametag = <h2 className="card__name">{name}</h2>;
+  if (props.link) {
+    nametag = (
+      <h2 className="card__name">
+        <Link to={props.link}>{name}</Link>
+      </h2>
+    );
+  }
+
   return (
     <div className={`card card__${variant}`} style={props.style}>
       <div className="card__header">
-        <h2 className="card__name">{name}</h2>
+        {nametag}
         <h3 className="card__date">{date}</h3>
       </div>
       <p className="card__details">{details}</p>
