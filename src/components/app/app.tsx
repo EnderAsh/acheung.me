@@ -6,7 +6,7 @@ import "../card/card.scss";
 import { AnimatedImage, Image } from "../image/image";
 import "../image/image.scss";
 //#region Image Imports
-import ResumePdf from "../../images/Resume.pdf";
+import ResumePdf from "../../images/Ashley Cheung Resume.pdf";
 import DdrImg1 from "../../images/ddr_1.png";
 import DdrImg2 from "../../images/ddr_2.png";
 import DdrImg3 from "../../images/ddr_3.png";
