@@ -1,19 +1,26 @@
-import { Helmet } from "react-helmet";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import "../chest/chest.scss";
 import BaseBottomPdf from "../chest/files/base_bottom.pdf";
 import BaseFrontBackPdf from "../chest/files/base_front_back.pdf";
 import BaseLeftRightPdf from "../chest/files/base_left_right.pdf";
 import MiddlePdf from "../chest/files/middle.pdf";
 import TopSlatsPdf from "../chest/files/top_slats.pdf";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
 /* eslint-disable jsx-a11y/alt-text */
 
 function Chest() {
   return (
     <div id="chest-page">
-      <Helmet>
-        <style>{"body { background-color: rgb(35, 161, 142); }"}</style>
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <style>{"body { background-color: rgb(35, 161, 142); }"}</style>
+        </Helmet>
+      </HelmetProvider>
       <h1>Dead Man's Chest</h1>
+      <a href="/" className="home-button">
+        <FontAwesomeIcon icon={faHome} />
+      </a>
       <div className="flexgrid-container">
         <div className="row">
           <div className="flex-item-1">

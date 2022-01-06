@@ -4,16 +4,19 @@ import "./index.css";
 import App from "./components/app/app";
 import Chest from "./components/chest/chest";
 import reportWebVitals from "./reportWebVitals";
+import { HelmetProvider } from "react-helmet-async";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="dead-mans-chest" element={<Chest />} />
-      </Routes>
-    </BrowserRouter>
+    <HelmetProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="dead-mans-chest" element={<Chest />} />
+        </Routes>
+      </BrowserRouter>
+    </HelmetProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
