@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 import "../chest/chest.scss";
 import BaseBottomPdf from "../chest/files/base_bottom.pdf";
 import BaseFrontBackPdf from "../chest/files/base_front_back.pdf";
@@ -12,11 +12,9 @@ import { faHome } from "@fortawesome/free-solid-svg-icons";
 function Chest() {
   return (
     <div id="chest-page">
-      <HelmetProvider>
-        <Helmet>
-          <style>{"body { background-color: rgb(35, 161, 142); }"}</style>
-        </Helmet>
-      </HelmetProvider>
+      <Helmet>
+        <style>{"body { background-color: rgb(35, 161, 142); }"}</style>
+      </Helmet>
       <h1>Dead Man's Chest</h1>
       <a href="/" className="home-button">
         <FontAwesomeIcon icon={faHome} />

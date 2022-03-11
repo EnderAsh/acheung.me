@@ -73,6 +73,9 @@ body {
     grid-template-columns: 1fr 1fr 1fr 2fr;
     gap: 2em;
     grid-template-areas: 
+    "clinic clinic clinic clinic"
+    "sculpture sculpture sculpture organizer"
+    "hod hod cnc-puzzle cnc-puzzle"
     "chest chest chest chest"
     "embroidery embroidery embroidery tote-bag"
     "string-art string-art string-art string-art"
@@ -90,6 +93,11 @@ body {
     @media(max-width: 1024px) {
       grid-template-columns: 1fr;
       grid-template-areas:
+      "clinic"
+      "sculpture"
+      "organizer"
+      "hod"
+      "cnc-puzzle"
       "chest"
       "embroidery"
       "tote-bag"

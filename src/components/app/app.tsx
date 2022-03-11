@@ -59,6 +59,20 @@ import ChestImg2 from "../../images/chest_2.jpeg";
 import ChestImg3 from "../../images/chest_3.jpeg";
 import ChestImg4 from "../../images/chest_4.jpeg";
 import ChestImg5 from "../../images/chest_5.png";
+import CncPuzzleImg1 from "../../images/cncpuzzle_1.jpg";
+import CncPuzzleImg2 from "../../images/cncpuzzle_2.png";
+import HODImg1 from "../../images/hod_1.jpg";
+import HODImg2 from "../../images/hod_2.jpg";
+import OrganizerImg1 from "../../images/organizer_1.jpg";
+import OrganizerImg2 from "../../images/organizer_2.jpg";
+import SculptureImg1 from "../../images/sculpture_1.webm";
+import SculptureImg2 from "../../images/sculpture_2.png";
+import ClinicImg1 from "../../images/clinic_1.webm";
+import ClinicImg2 from "../../images/clinic_2.jpg";
+import ClinicImg3 from "../../images/clinic_3.jpg";
+import ClinicImg4 from "../../images/clinic_4.jpg";
+import ClinicImg5 from "../../images/clinic_5.webm";
+import ClinicImg6 from "../../images/clinic_6.jpg";
 //#endregion
 
 function App() {
@@ -79,6 +93,142 @@ function App() {
           <div className="tab__home">
             <h2>My Projects</h2>
             <div className="card-grid">
+              <Card
+                style={{ gridArea: "clinic" }}
+                variant="large"
+                name="Amazon Lab126 Autonomous Robot"
+                date="September 2021-May 2022"
+                images={[
+                  <AnimatedImage
+                    key="clinicimg1"
+                    src={ClinicImg1}
+                    caption="Demo of robot localizing and navigating autonomously (sped up)"
+                  />,
+                  <Image
+                    key="clinicimg2"
+                    src={ClinicImg2}
+                    caption="Robot equipped with omnidirectional mecanum wheels"
+                  />,
+                  <Image
+                    key="clinicimg3"
+                    src={ClinicImg3}
+                    caption="Internals of robot"
+                  />,
+                  <Image
+                    key="clinicimg4"
+                    src={ClinicImg4}
+                    caption="Mockup of mannequin weight to test stability"
+                  />,
+                  <AnimatedImage
+                    key="clinicimg5"
+                    src={ClinicImg5}
+                    caption="SolidWorks simulation of mannequin to test stability"
+                  />,
+                  <Image
+                    key="clinicimg6"
+                    src={ClinicImg6}
+                    caption="AprilTag used for camera based localization"
+                  />,
+                ]}
+                details="As my junior year capstone project, I and a team of four other students are developing an
+                autonomous robotic solution to take repetitive audio data measurements. The robot uses its
+                omnidirectional wheels to navigate and localize itself within a household environment after being
+                given a LiDAR constructed map of the room. Ultimately, two robots will operate simultaneously
+                in a room, where one would hold a speaker and another would hold a microphone. Together,
+                they will visit every combination of positions in a grid, taking audio room impulse response data
+                at each position. An adjustable mount is also being designed to hold a variety of equipment,
+                including a mannequin."
+              />
+              <Card
+                style={{ gridArea: "sculpture" }}
+                variant="small-2pic"
+                name="Kinetic Sculpture"
+                date="March 2022"
+                images={[
+                  <AnimatedImage
+                    key="sculptureimg1"
+                    src={SculptureImg1}
+                    caption="Finished product"
+                  />,
+                  <Image
+                    key="sculptureimg2"
+                    src={SculptureImg2}
+                    caption="SolidWorks model of contraption"
+                  />,
+                ]}
+                details="As part of my mechanical design class, I worked with a team of 4 to create this machine that
+                plays the xylophone when powered. The user turns a crank, which is geared up to drive a lead
+                screw to translate the keys. The same input rotation is used to swing a mallet up and down so it
+                strikes the keys as they pass by below. The purpose of this assignment was to gain familiarity
+                with belts, pulleys, and lead screws."
+              />
+              <Card
+                style={{ gridArea: "organizer" }}
+                variant="small-2pic"
+                name="Embroidery Organizer"
+                date="March 2022"
+                images={[
+                  <Image
+                    key="organizerimg1"
+                    src={OrganizerImg1}
+                    caption="Finished product"
+                  />,
+                  <Image
+                    key="organizerimg2"
+                    src={OrganizerImg2}
+                    caption="Spool made from a rejected laser cut project"
+                  />,
+                ]}
+                details="This drawer of assorted embroidery was tangled beyond usability. I designed and laser cut
+                embroidery holders out of scrap wood, wrapped up each color, created a grid insert for the
+                drawer and organized them by color so that users of the space would be able to make use of
+                our embroidery floss."
+              />
+              <Card
+                style={{ gridArea: "hod" }}
+                variant="small-2pic"
+                name="House of Desires Set"
+                date="Oct-Nov 2021"
+                images={[
+                  <Image
+                    key="hodimg1"
+                    src={HODImg1}
+                    caption="Finished product"
+                  />,
+                  <Image
+                    key="hodimg2"
+                    src={HODImg2}
+                    caption="Arches in progress"
+                  />,
+                ]}
+                details="Working on a team of 5-6, I assisted in the building and painting of this set at Pomona College's
+                production of House of Desires. Elements that I worked on were the arches, flower boxes,
+                plaques, doors, and miscellaneous decorations."
+              />
+              <Card
+                style={{ gridArea: "cnc-puzzle" }}
+                variant="small-2pic"
+                name="CNC Machine Puzzle"
+                date="February 2022"
+                images={[
+                  <Image
+                    key="cncpuzzleimg1"
+                    src={CncPuzzleImg1}
+                    caption="Finished product"
+                  />,
+                  <Image
+                    key="cncpuzzleimg2"
+                    src={CncPuzzleImg2}
+                    caption="PartWorks path"
+                  />,
+                ]}
+                details="This puzzle was a tutorial for using the wood shop's ShopBot, a CNC milling machine. Six
+                pieces were cut out of a sheet of wood, and they are able to be assembled together into a cube.
+                I designed SolidWorks models of the parts to create outlines that could be imported into
+                PartWorks. From there, a path was generated that included tabs and ramping as the bit plunged
+                into and out of the wood. Careful consideration was given to the islands and the diameter of the
+                cutting bit."
+              />
               <Card
                 style={{ gridArea: "chest" }}
                 variant="large"
