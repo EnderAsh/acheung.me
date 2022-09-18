@@ -45,11 +45,12 @@
   &__large {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 1em;
-    grid-template-rows: auto;
+    grid-template-rows: auto 250px;
     grid-template-areas: "header header header header"
                         "details carousel carousel carousel";
 
     @media(max-width: 1024px) {
+      grid-template-rows: auto;
       grid-template-areas: "header header header header"
                           "details details details details"
                           "carousel carousel carousel carousel";
@@ -91,6 +92,7 @@
 
   &__details {
     grid-area: details;
+    overflow: scroll;
   }
 
   &__carousel {
@@ -99,6 +101,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @media(min-width: 1024px) {
+      // ensure children of carousel do not extend past the height of the card
+      .slick-slide > * {
+        height: 200px;
+      }
+    }
   }
 
   &__img1 {

@@ -58,7 +58,7 @@ body {
   }
 }
 
-.tab__home {
+.tab__engineering {
   @include tab-panel;
   @include full-background('../../images/background_home.svg');
   h2, h3{
@@ -74,21 +74,71 @@ body {
     gap: 2em;
     grid-template-areas: 
     "clinic clinic clinic clinic"
-    "sculpture sculpture sculpture organizer"
-    "hod hod cnc-puzzle cnc-puzzle"
+    "sculpture sculpture cnc-puzzle cnc-puzzle"
     "chest chest chest chest"
-    "embroidery embroidery embroidery tote-bag"
-    "string-art string-art string-art string-art"
     "ddr ddr ddr ddr"
     "clock clock clock clock"
-    "laptop-holder laptop-holder hotdog hotdog"
+    "laptop-holder laptop-holder robot robot"
     "light-switch light-switch light-switch light-switch"
-    "flowers flowers flowers robot"
-    "heart heart pencil-holder pencil-holder"
+    "trebuchet trebuchet pencil-holder pencil-holder"
     "hh hh hh hh"
-    "undertale undertale undertale trebuchet"
     "ferris-wheel ferris-wheel ferris-wheel ferris-wheel"
     "eiffel-tower eiffel-tower nodes nodes";
+
+    @media(max-width: 1024px) {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "clinic"
+      "sculpture"
+      "organizer"
+      "hod"
+      "cnc-puzzle"
+      "chest"
+      "embroidery"
+      "tote-bag"
+      "string-art"
+      "ddr"
+      "clock"
+      "laptop-holder"
+      "hotdog"
+      "light-switch"
+      "flowers"
+      "robot"
+      "heart"
+      "pencil-holder"
+      "hh"
+      "undertale"
+      "trebuchet"
+      "ferris-wheel"
+      "eiffel-tower"
+      "nodes";
+    }
+  }
+}
+
+.tab__art {
+  @include tab-panel;
+  @include full-background('../../images/background_home.svg');
+  h2, h3{
+    margin: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-weight: 400;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    gap: 2em;
+    grid-template-areas: 
+    "organizer organizer organizer hod"
+    "tote-bag tote-bag embroidery embroidery"
+    "string-art string-art string-art string-art"
+    "flowers flowers flowers hotdog"
+    "heart heart heart undertale"
+    "hh hh hh hh"
+    "ferris-wheel ferris-wheel ferris-wheel ferris-wheel"
+    "eiffel-tower eiffel-tower eiffel-tower eiffel-tower";
 
     @media(max-width: 1024px) {
       grid-template-columns: 1fr;
