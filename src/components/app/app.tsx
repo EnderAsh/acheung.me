@@ -73,6 +73,43 @@ import ClinicImg3 from "../../images/clinic_3.jpg";
 import ClinicImg4 from "../../images/clinic_4.jpg";
 import ClinicImg5 from "../../images/clinic_5.webm";
 import ClinicImg6 from "../../images/clinic_6.jpg";
+import SolarCartImg1 from "../../images/solarcart_1.jpeg";
+import SolarCartImg2 from "../../images/solarcart_2.jpeg";
+import SolarCartImg3 from "../../images/solarcart_3.jpeg";
+import SolarCartImg4 from "../../images/solarcart_4.png";
+import SolarCartImg5 from "../../images/solarcart_5.png";
+import SolarCartImg6 from "../../images/solarcart_6.png";
+import SolarCartImg7 from "../../images/solarcart_7.jpg";
+import SolarCartImg8 from "../../images/solarcart_8.jpg";
+import SolarCartImg9 from "../../images/solarcart_9.png";
+import SolarCartImg10 from "../../images/solarcart_10.jpg";
+import SolarCartImg11 from "../../images/solarcart_11.jpg";
+import WallsImg1 from "../../images/walls_1.jpg";
+import WallsImg2 from "../../images/walls_2.webm";
+import WallsImg3 from "../../images/walls_3.jpg";
+import WallsImg4 from "../../images/walls_4.jpg";
+import WallsImg5 from "../../images/walls_5.jpg";
+import WallsImg6 from "../../images/walls_6.jpg";
+import WallsImg7 from "../../images/walls_7.jpg";
+import WallsImg8 from "../../images/walls_8.jpg";
+import WallsImg9 from "../../images/walls_9.jpg";
+import WallsImg10 from "../../images/walls_10.jpg";
+import WallsImg11 from "../../images/walls_11.jpg";
+import HiddenGearsImg1 from "../../images/hiddengears_1.jpg";
+import HiddenGearsImg2 from "../../images/hiddengears_2.webm";
+import HiddenGearsImg3 from "../../images/hiddengears_3.webm";
+import HiddenGearsImg4 from "../../images/hiddengears_4.jpg";
+import HiddenGearsImg5 from "../../images/hiddengears_5.jpg";
+import HiddenGearsImg6 from "../../images/hiddengears_6.jpg";
+import HiddenGearsImg7 from "../../images/hiddengears_7.png";
+import E80Img1 from "../../images/E80_1.jpg";
+import E80Img2 from "../../images/E80_2.webm";
+import E80Img3 from "../../images/E80_3.png";
+import E80Img4 from "../../images/E80_4.png";
+import E80Img5 from "../../images/E80_5.png";
+
+
+
 //#endregion
 
 function App() {
@@ -95,6 +132,215 @@ function App() {
           <div className="tab__engineering">
             <h2>My Projects</h2>
             <div className="card-grid">
+
+            <Card
+              style={{ gridArea: "e80" }}
+              variant="large"
+              name="Autonomous Underwater Robot"
+              date="Mar-Apr 2022"
+              images={[
+                <Image
+                  key="e80img1"
+                  src={E80Img1}
+                  caption="Robot design"
+                />,
+                <AnimatedImage
+                  key="e80img2"
+                  src={E80Img2}
+                  caption="Deployment at Dana Point"
+                />,
+                <Image
+                  key="e80img3"
+                  src={E80Img3}
+                  caption="Sensor data through four dives from surface to ~1.5m"
+                />,
+                <Image
+                  key="e80img4"
+                  src={E80Img4}
+                  caption="Pressure vs temperature correlations for four dives"
+                />,
+                <Image
+                  key="e80img5"
+                  src={E80Img5}
+                  caption="Microphone tests on land to verify sensor operation"
+                />,
+              ]}
+              details="In my Experimental Engineering class, I worked with three other people to make an autonomous underwater robot. PVC tubes were used for the frame, and the electronics were kept in a sealed box with penetrators allowing access to the external sensors. We used a pressure sensor and thermistor for data collection, and microphones for navigation towards a speaker. The algorithm for navigation detected which of the microphones detected a chirp from the speaker first and turned in that direction. We tested our robot in a lake and at the beach. Unfortunately, the water flowing past the microphones seemed to continuously cause them to peak so navigation was unsuccessful, but we still got data and kept our electronics dry! "
+            />
+
+            <Card
+              style={{ gridArea: "hiddengears" }}
+              variant="large"
+              name="Hidden Gears Puzzle"
+              date="Apr-May 2022"
+              images={[
+                <Image
+                  key="hiddengearsimg1"
+                  src={HiddenGearsImg1}
+                  caption="Finished product"
+                />,
+                <AnimatedImage
+                  key="hiddengearsimg2"
+                  src={HiddenGearsImg2}
+                  caption="Mechanism demo with cover off"
+                />,
+                <AnimatedImage
+                  key="hiddengearsimg3"
+                  src={HiddenGearsImg3}
+                  caption="Magnetic positioning demo"
+                />,
+                <Image
+                  key="hiddengearsimg4"
+                  src={HiddenGearsImg4}
+                  caption="Early prototype of detent mechanism"
+                />,
+                <Image
+                  key="hiddengearsimg5"
+                  src={HiddenGearsImg5}
+                  caption="Shafts and shaft collars assembled"
+                />,
+                <Image
+                  key="hiddengearsimg6"
+                  src={HiddenGearsImg6}
+                  caption="Unpainted work in progress"
+                />,
+                <Image
+                  key="hiddengearsimg7"
+                  src={HiddenGearsImg7}
+                  caption="Logic puzzle that gives colors for solution to puzzle"
+                />,
+              ]}
+              details="For my club’s space themed escape room, I designed a puzzle where the player needs to figure out how much to push in three shafts so that all the gears engage and they’re able to reveal a code that unlocks the next puzzle. Because the puzzle would be unsolvable if the gears were misaligned as the user tries to push the shafts in, the gears must turn towards discrete rotations so they can always pass by each other. To accomplish this, I inset magnets at 8 points radially around each gear and attached an attracting magnet to the end of a screw on the shaft. I could then adjust the strength of the attraction by turning the screw slightly. This method was much more reliable than my prototype design which used a ball plunger - the deflection of the gear was nontrivial and the force required to depress the plunger was too high. The reveal of the code was done through a lead screw moving a plate into the view of a window on the side of the box. "
+            />
+
+            <Card
+              style={{ gridArea: "walls" }}
+              variant="large"
+              name="Temporary Walls"
+              date="Apr-May 2022"
+              images={[
+                <Image
+                  key="wallsimg1"
+                  src={WallsImg1}
+                  caption="Finished product"
+                />,
+                <AnimatedImage
+                  key="wallsimg2"
+                  src={WallsImg2}
+                  caption="Door mechanism"
+                />,
+                <Image
+                  key="wallsimg3"
+                  src={WallsImg3}
+                  caption="Foam boards"
+                />,
+                <Image
+                  key="wallsimg4"
+                  src={WallsImg4}
+                  caption="Attaching plywood with construction adhesive"
+                />,
+                <Image
+                  key="wallsimg5"
+                  src={WallsImg5}
+                  caption="One of six spacers per wall segment"
+                />,
+                <Image
+                  key="wallsimg6"
+                  src={WallsImg6}
+                  caption="Constructing spacers with epoxy"
+                />,
+                <Image
+                  key="wallsimg7"
+                  src={WallsImg7}
+                  caption="One wall segment free-standing"
+                />,
+                <Image
+                  key="wallsimg8"
+                  src={WallsImg8}
+                  caption="Wall segment with door"
+                />,
+                <Image
+                  key="wallsimg9"
+                  src={WallsImg9}
+                  caption="All walls stored neatly on custom cart"
+                />,
+                <Image
+                  key="wallsimg10"
+                  src={WallsImg10}
+                  caption="Wall segment with cutout for two-sided maze"
+                />,
+                <Image
+                  key="wallsimg11"
+                  src={WallsImg11}
+                  caption="Early spacer design"
+                />,
+              ]}
+              details="As club president of my college’s escape room club, I’m responsible for a lot of the infrastructure details of the escape room. One challenge was to divide one classroom into multiple rooms so that players could progress from one area of the room to another. These dividers needed to be lightweight, easy to set up, and free-standing (we were not allowed to attach anything to the walls or floors of the classroom). The solution I ended up at used large 0.25” thick foam boards reinforced with thin plywood around the edges, attached with custom PVC and wood spacers. The walls were arranged in a T shape to prevent them from tipping over. The door from one room to another was a foam panel with a 1x4 frame that fell away from the players into the next room once they solved a puzzle. The door was held in place with an electromagnet, and players needed to trigger two hall effect sensors with “bombs” to “explode” the wall. "
+            />
+            <Card
+                style={{ gridArea: "solarcart" }}
+                variant="large"
+                name="Solar Powered Smoothie Cart"
+                date="Mar 2021-Apr 2022"
+                images={[
+                  <Image
+                    key="solarcartimg1"
+                    src={SolarCartImg1}
+                    caption="Finished product"
+                  />,
+                  <Image
+                    key="solarcartimg2"
+                    src={SolarCartImg2}
+                    caption="Folded for storage"
+                  />,
+                  <Image
+                    key="solarcartimg3"
+                    src={SolarCartImg3}
+                    caption="Electronics"
+                  />,
+                  <Image
+                    key="solarcartimg4"
+                    src={SolarCartImg4}
+                    caption="CAD of final design"
+                  />,
+                  <Image
+                    key="solarcartimg5"
+                    src={SolarCartImg5}
+                    caption="Earlier design with folding table"
+                  />,
+                  <Image
+                    key="solarcartimg6"
+                    src={SolarCartImg6}
+                    caption="Cabinet dimensions"
+                  />,
+                  <Image
+                    key="solarcartimg7"
+                    src={SolarCartImg7}
+                    caption="Building frame for solar panels"
+                  />,
+                  <Image
+                    key="solarcartimg8"
+                    src={SolarCartImg8}
+                    caption="Rolling stand in progress"
+                  />,
+                  <Image
+                    key="solarcartimg9"
+                    src={SolarCartImg9}
+                    caption="Electronics hookup guide"
+                  />,
+                  <Image
+                    key="solarcartimg10"
+                    src={SolarCartImg10}
+                    caption="Partway through build process"
+                  />,
+                  <Image
+                    key="solarcartimg11"
+                    src={SolarCartImg11}
+                    caption="Finished product"
+                  />,
+                ]}
+                details="I led the design and build of a solar-powered smoothie cart used to promote sustainability at events by using solar power to power a blender to make free smoothies. A group of four and I designed it in SolidWorks remotely and a similar sized (but different) group and I bought materials and built our design once we returned to campus in the fall of 2021. The design is able to fold the three solar panels up or down depending if it was being charged or stored. It also has a cabinet unit that stores the battery, charge controller, and inverter. "
+              />
               <Card
                 style={{ gridArea: "clinic" }}
                 variant="large"

@@ -73,6 +73,10 @@ body {
     grid-template-columns: 1fr 1fr 1fr 2fr;
     gap: 2em;
     grid-template-areas: 
+    "e80 e80 e80 e80"
+    "hiddengears hiddengears hiddengears hiddengears"
+    "walls walls walls walls"
+    "solarcart solarcart solarcart solarcart"
     "clinic clinic clinic clinic"
     "sculpture sculpture cnc-puzzle cnc-puzzle"
     "chest chest chest chest"
@@ -88,6 +92,7 @@ body {
     @media(max-width: 1024px) {
       grid-template-columns: 1fr;
       grid-template-areas:
+      "solarcart"
       "clinic"
       "sculpture"
       "organizer"
