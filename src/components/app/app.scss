@@ -73,6 +73,12 @@ body {
     grid-template-columns: 1fr 1fr 1fr 2fr;
     gap: 2em;
     grid-template-areas: 
+    "coasters coasters coasters coasters"
+    "aprovecho aprovecho aprovecho aprovecho"
+    "paintingdoor paintingdoor paintingdoor paintingdoor"
+    "timer timer starplates starplates"
+    "foldingwalls foldingwalls foldingwalls foldingwalls"
+    "boat boat boat boat"
     "e80 e80 e80 e80"
     "hiddengears hiddengears hiddengears hiddengears"
     "walls walls walls walls"
@@ -92,6 +98,14 @@ body {
     @media(max-width: 1024px) {
       grid-template-columns: 1fr;
       grid-template-areas:
+      "coasters"
+      "aprovecho"
+      "paintingdoor"
+      "timer"
+      "starplates"
+      "foldingwalls"
+      "boat"
+      "e80"
       "solarcart"
       "clinic"
       "sculpture"
@@ -136,6 +150,8 @@ body {
     grid-template-columns: 1fr 1fr 1fr 2fr;
     gap: 2em;
     grid-template-areas: 
+    "foldingwalls foldingwalls foldingwalls foldingwalls"
+    "boat boat boat boat"
     "organizer organizer organizer hod"
     "tote-bag tote-bag embroidery embroidery"
     "string-art string-art string-art string-art"
@@ -148,6 +164,8 @@ body {
     @media(max-width: 1024px) {
       grid-template-columns: 1fr;
       grid-template-areas:
+      "foldingwalls"
+      "boat"
       "clinic"
       "sculpture"
       "organizer"

@@ -107,8 +107,40 @@ import E80Img2 from "../../images/E80_2.webm";
 import E80Img3 from "../../images/E80_3.png";
 import E80Img4 from "../../images/E80_4.png";
 import E80Img5 from "../../images/E80_5.png";
-
-
+import CoastersImg1 from "../../images/coasters_1.jpg";
+import CoastersImg2 from "../../images/coasters_2.jpg";
+import CoastersImg3 from "../../images/coasters_3.jpg";
+import CoastersImg4 from "../../images/coasters_4.jpg";
+import CoastersImg5 from "../../images/coasters_5.jpg";
+import AprovechoImg1 from "../../images/aprovecho_1.jpg";
+import AprovechoImg2 from "../../images/aprovecho_2.jpg";
+import AprovechoImg3 from "../../images/aprovecho_3.jpg";
+import AprovechoImg4 from "../../images/aprovecho_4.jpg";
+import AprovechoImg5 from "../../images/aprovecho_5.jpg";
+import AprovechoImg6 from "../../images/aprovecho_6.jpg";
+import AprovechoImg7 from "../../images/aprovecho_7.jpg";
+import PaintingdoorImg1 from "../../images/paintingdoor_1.jpg";
+import PaintingdoorImg2 from "../../images/paintingdoor_2.webm";
+import PaintingdoorImg3 from "../../images/paintingdoor_3.jpg";
+import PaintingdoorImg4 from "../../images/paintingdoor_4.jpg";
+import PaintingdoorImg5 from "../../images/paintingdoor_5.jpg";
+import TimerImg1 from "../../images/timer_1.jpg";
+import TimerImg2 from "../../images/timer_2.jpg";
+import StarplatesImg1 from "../../images/starplates_1.webm";
+import StarplatesImg2 from "../../images/starplates_2.jpg";
+import FoldingwallsImg1 from "../../images/foldingwalls_1.jpg";
+import FoldingwallsImg2 from "../../images/foldingwalls_2.webm";
+import FoldingwallsImg3 from "../../images/foldingwalls_3.jpg";
+import FoldingwallsImg4 from "../../images/foldingwalls_4.jpg";
+import FoldingwallsImg5 from "../../images/foldingwalls_5.jpg";
+import FoldingwallsImg6 from "../../images/foldingwalls_6.jpg";
+import BoatImg1 from "../../images/boat_1.jpg";
+import BoatImg2 from "../../images/boat_2.webm";
+import BoatImg3 from "../../images/boat_3.jpg";
+import BoatImg4 from "../../images/boat_4.jpg";
+import BoatImg5 from "../../images/boat_5.webm";
+import BoatImg6 from "../../images/boat_6.png";
+import BoatImg7 from "../../images/boat_7.jpg";
 
 //#endregion
 
@@ -133,213 +165,454 @@ function App() {
             <h2>My Projects</h2>
             <div className="card-grid">
 
-            <Card
-              style={{ gridArea: "e80" }}
-              variant="large"
-              name="Autonomous Underwater Robot"
-              date="Mar-Apr 2022"
-              images={[
-                <Image
-                  key="e80img1"
-                  src={E80Img1}
-                  caption="Robot design"
-                />,
-                <AnimatedImage
-                  key="e80img2"
-                  src={E80Img2}
-                  caption="Deployment at Dana Point"
-                />,
-                <Image
-                  key="e80img3"
-                  src={E80Img3}
-                  caption="Sensor data through four dives from surface to ~1.5m"
-                />,
-                <Image
-                  key="e80img4"
-                  src={E80Img4}
-                  caption="Pressure vs temperature correlations for four dives"
-                />,
-                <Image
-                  key="e80img5"
-                  src={E80Img5}
-                  caption="Microphone tests on land to verify sensor operation"
-                />,
-              ]}
-              details="In my Experimental Engineering class, I worked with three other people to make an autonomous underwater robot. PVC tubes were used for the frame, and the electronics were kept in a sealed box with penetrators allowing access to the external sensors. We used a pressure sensor and thermistor for data collection, and microphones for navigation towards a speaker. The algorithm for navigation detected which of the microphones detected a chirp from the speaker first and turned in that direction. We tested our robot in a lake and at the beach. Unfortunately, the water flowing past the microphones seemed to continuously cause them to peak so navigation was unsuccessful, but we still got data and kept our electronics dry! "
-            />
-
-            <Card
-              style={{ gridArea: "hiddengears" }}
-              variant="large"
-              name="Hidden Gears Puzzle"
-              date="Apr-May 2022"
-              images={[
-                <Image
-                  key="hiddengearsimg1"
-                  src={HiddenGearsImg1}
-                  caption="Finished product"
-                />,
-                <AnimatedImage
-                  key="hiddengearsimg2"
-                  src={HiddenGearsImg2}
-                  caption="Mechanism demo with cover off"
-                />,
-                <AnimatedImage
-                  key="hiddengearsimg3"
-                  src={HiddenGearsImg3}
-                  caption="Magnetic positioning demo"
-                />,
-                <Image
-                  key="hiddengearsimg4"
-                  src={HiddenGearsImg4}
-                  caption="Early prototype of detent mechanism"
-                />,
-                <Image
-                  key="hiddengearsimg5"
-                  src={HiddenGearsImg5}
-                  caption="Shafts and shaft collars assembled"
-                />,
-                <Image
-                  key="hiddengearsimg6"
-                  src={HiddenGearsImg6}
-                  caption="Unpainted work in progress"
-                />,
-                <Image
-                  key="hiddengearsimg7"
-                  src={HiddenGearsImg7}
-                  caption="Logic puzzle that gives colors for solution to puzzle"
-                />,
-              ]}
-              details="For my club’s space themed escape room, I designed a puzzle where the player needs to figure out how much to push in three shafts so that all the gears engage and they’re able to reveal a code that unlocks the next puzzle. Because the puzzle would be unsolvable if the gears were misaligned as the user tries to push the shafts in, the gears must turn towards discrete rotations so they can always pass by each other. To accomplish this, I inset magnets at 8 points radially around each gear and attached an attracting magnet to the end of a screw on the shaft. I could then adjust the strength of the attraction by turning the screw slightly. This method was much more reliable than my prototype design which used a ball plunger - the deflection of the gear was nontrivial and the force required to depress the plunger was too high. The reveal of the code was done through a lead screw moving a plate into the view of a window on the side of the box. "
-            />
-
-            <Card
-              style={{ gridArea: "walls" }}
-              variant="large"
-              name="Temporary Walls"
-              date="Apr-May 2022"
-              images={[
-                <Image
-                  key="wallsimg1"
-                  src={WallsImg1}
-                  caption="Finished product"
-                />,
-                <AnimatedImage
-                  key="wallsimg2"
-                  src={WallsImg2}
-                  caption="Door mechanism"
-                />,
-                <Image
-                  key="wallsimg3"
-                  src={WallsImg3}
-                  caption="Foam boards"
-                />,
-                <Image
-                  key="wallsimg4"
-                  src={WallsImg4}
-                  caption="Attaching plywood with construction adhesive"
-                />,
-                <Image
-                  key="wallsimg5"
-                  src={WallsImg5}
-                  caption="One of six spacers per wall segment"
-                />,
-                <Image
-                  key="wallsimg6"
-                  src={WallsImg6}
-                  caption="Constructing spacers with epoxy"
-                />,
-                <Image
-                  key="wallsimg7"
-                  src={WallsImg7}
-                  caption="One wall segment free-standing"
-                />,
-                <Image
-                  key="wallsimg8"
-                  src={WallsImg8}
-                  caption="Wall segment with door"
-                />,
-                <Image
-                  key="wallsimg9"
-                  src={WallsImg9}
-                  caption="All walls stored neatly on custom cart"
-                />,
-                <Image
-                  key="wallsimg10"
-                  src={WallsImg10}
-                  caption="Wall segment with cutout for two-sided maze"
-                />,
-                <Image
-                  key="wallsimg11"
-                  src={WallsImg11}
-                  caption="Early spacer design"
-                />,
-              ]}
-              details="As club president of my college’s escape room club, I’m responsible for a lot of the infrastructure details of the escape room. One challenge was to divide one classroom into multiple rooms so that players could progress from one area of the room to another. These dividers needed to be lightweight, easy to set up, and free-standing (we were not allowed to attach anything to the walls or floors of the classroom). The solution I ended up at used large 0.25” thick foam boards reinforced with thin plywood around the edges, attached with custom PVC and wood spacers. The walls were arranged in a T shape to prevent them from tipping over. The door from one room to another was a foam panel with a 1x4 frame that fell away from the players into the next room once they solved a puzzle. The door was held in place with an electromagnet, and players needed to trigger two hall effect sensors with “bombs” to “explode” the wall. "
-            />
-            <Card
-                style={{ gridArea: "solarcart" }}
+              <Card
+                style={{ gridArea: "coasters" }}
                 variant="large"
-                name="Solar Powered Smoothie Cart"
-                date="Mar 2021-Apr 2022"
+                name="Coasters"
+                date="Mar 2023"
                 images={[
                   <Image
-                    key="solarcartimg1"
-                    src={SolarCartImg1}
+                    key="coastersimg1"
+                    src={CoastersImg1}
                     caption="Finished product"
                   />,
                   <Image
-                    key="solarcartimg2"
-                    src={SolarCartImg2}
-                    caption="Folded for storage"
+                    key="coastersimg2"
+                    src={CoastersImg2}
+                    caption="CNC Preview from PartWorks"
                   />,
                   <Image
-                    key="solarcartimg3"
-                    src={SolarCartImg3}
-                    caption="Electronics"
+                    key="coastersimg3"
+                    src={CoastersImg3}
+                    caption="Testing out different wood stains"
                   />,
                   <Image
-                    key="solarcartimg4"
-                    src={SolarCartImg4}
-                    caption="CAD of final design"
+                    key="coastersimg4"
+                    src={CoastersImg4}
+                    caption="Roughly cut with bandsaw (left), after sanding (right)"
                   />,
                   <Image
-                    key="solarcartimg5"
-                    src={SolarCartImg5}
-                    caption="Earlier design with folding table"
-                  />,
-                  <Image
-                    key="solarcartimg6"
-                    src={SolarCartImg6}
-                    caption="Cabinet dimensions"
-                  />,
-                  <Image
-                    key="solarcartimg7"
-                    src={SolarCartImg7}
-                    caption="Building frame for solar panels"
-                  />,
-                  <Image
-                    key="solarcartimg8"
-                    src={SolarCartImg8}
-                    caption="Rolling stand in progress"
-                  />,
-                  <Image
-                    key="solarcartimg9"
-                    src={SolarCartImg9}
-                    caption="Electronics hookup guide"
-                  />,
-                  <Image
-                    key="solarcartimg10"
-                    src={SolarCartImg10}
-                    caption="Partway through build process"
-                  />,
-                  <Image
-                    key="solarcartimg11"
-                    src={SolarCartImg11}
-                    caption="Finished product"
+                    key="coastersimg5"
+                    src={CoastersImg5}
+                    caption="Cleaning and polishing coasters"
                   />,
                 ]}
-                details="I led the design and build of a solar-powered smoothie cart used to promote sustainability at events by using solar power to power a blender to make free smoothies. A group of four and I designed it in SolidWorks remotely and a similar sized (but different) group and I bought materials and built our design once we returned to campus in the fall of 2021. The design is able to fold the three solar panels up or down depending if it was being charged or stored. It also has a cabinet unit that stores the battery, charge controller, and inverter. "
+                details="Using a ShopBot CNC router, I cut this coaster design out of a plank of red oak and filled in the gaps with epoxy. I sanded down the surface first, then marked out the edges of the circles with a laser cut guide. I cut them out with the bandsaw, then sanded down the edges so they were exactly circular. After a lot of sanding, I applied a wood stain and a protective polyurethane coating to finish them!"
+              />
+
+              <Card
+                style={{ gridArea: "aprovecho" }}
+                variant="large"
+                name="Aprovecho Clinic Project"
+                date="Sep 2022-May 2023"
+                images={[
+                  <Image
+                    key="aprovechoimg1"
+                    src={AprovechoImg1}
+                    caption="Final version of housing (closed)"
+                  />,
+                  <Image
+                    key="aprovechoimg2"
+                    src={AprovechoImg2}
+                    caption="Final version of housing (open)"
+                  />,
+                  <Image
+                    key="aprovechoimg3"
+                    src={AprovechoImg3}
+                    caption="Plastic fan casing inside metal fan housing"
+                  />,
+                  <Image
+                    key="aprovechoimg4"
+                    src={AprovechoImg4}
+                    caption="Early prototype of housing"
+                  />,
+                  <Image
+                    key="aprovechoimg5"
+                    src={AprovechoImg5}
+                    caption="Testing new design versus original"
+                  />,
+                  <Image
+                    key="aprovechoimg6"
+                    src={AprovechoImg6}
+                    caption="Bottom of housing with pipe attached"
+                  />,
+                  <Image
+                    key="aprovechoimg7"
+                    src={AprovechoImg7}
+                    caption="Rejected version of housing that used toggle clamps"
+                  />,
+                ]}
+                details="For my senior year capstone project, I redesigned the fan housing system for Aprovecho Research Center's Jet-Flame, which blows air into wood fired cookstoves to improve efficiency and decrease harmful emissions. This new fan housing enabled our prototype to have a 90 degree bend in the tubing to protect the meltable plastic fan casing from the fire. The bent sheet metal fan housing has a part that flips up and clips in place to allow easy access to the fan for repairs or replacement."
+              />
+
+              <Card
+                style={{ gridArea: "paintingdoor" }}
+                variant="large"
+                name="Secret Painting Door"
+                date="Jan-May 2023"
+                images={[
+                  <Image
+                    key="paintingdoorimg1"
+                    src={PaintingdoorImg1}
+                    caption="Door open, in escape room"
+                  />,
+                  <AnimatedImage
+                    key="paintingdoorimg2"
+                    src={PaintingdoorImg2}
+                    caption="Door opening with electrical signal"
+                  />,
+                  <Image
+                    key="paintingdoorimg3"
+                    src={PaintingdoorImg3}
+                    caption="Painting frame"
+                  />,
+                  <Image
+                    key="paintingdoorimg4"
+                    src={PaintingdoorImg4}
+                    caption="Initial test fit of frame and door"
+                  />,
+                  <Image
+                    key="paintingdoorimg5"
+                    src={PaintingdoorImg5}
+                    caption="Door closed"
+                  />,
+                  
+                ]}
+                details="For my museum themed escape room, I designed and built this 'secret painting' door that would get triggered once the players solved a puzzle. Before the door is opened, it looks like a normal painting, blending in with the many other paintings in the room, but after the players trigger a switch to disable the electromagnets holding the door closed, they can step through the frame to the secret vault behind the wall."
+              />
+
+              <Card
+                  style={{ gridArea: "timer" }}
+                  variant="small-2pic"
+                  name="Escape Room Painting Timer"
+                  date="Jan-May 2023"
+                  images={[
+                    <Image
+                      key="timerimg1"
+                      src={TimerImg1}
+                      caption="Timer in escape room"
+                    />,
+                    <Image
+                      key="timerimg2"
+                      src={TimerImg2}
+                      caption="Frame in progress"
+                    />,
+                  ]}
+                  details="I designed and built this backlit projection screen so that the timer for my museum themed escape room could be themed like a Mondrian painting. The frame was made of cotton fabric stapled to trim pieces. The projector showed a timer website that was synced across the internet so we could control it remotely. The timer not only showed how much of the one hour participants had left, but also which of the three objectives they had completed."
+              />  
+
+              <Card
+                  style={{ gridArea: "starplates" }}
+                  variant="small-2pic"
+                  name="Breakable Star Plates Props"
+                  date="Sep-Nov 2022"
+                  images={[
+                    <AnimatedImage
+                      key="starplatesimg1"
+                      src={StarplatesImg1}
+                      caption="Testing breakability"
+                    />,
+                    <Image
+                      key="starplatesimg2"
+                      src={StarplatesImg2}
+                      caption="Spray painting the plates"
+                    />,
+                  ]}
+                  details="The theatre production 'Silent Sky' calls for a 'glass' plate that can be broken on the floor when the actor dramatically drops it in shock. Along with another engineer, we accomplished this by laser cutting pieces of 1/16 inch acrylic almost all the way through so they would break along the cracks when dropped. We also used some spray frost effect to make the edges frosted to make them more refined."
+              />  
+
+              <Card
+                style={{ gridArea: "foldingwalls" }}
+                variant="large"
+                name="Folding Walls Set Piece"
+                date="Sep-Nov 2022"
+                images={[
+                  <Image
+                    key="foldingwallsimg1"
+                    src={FoldingwallsImg1}
+                    caption="Finished product"
+                  />,
+                  <AnimatedImage
+                    key="foldingwallsimg2"
+                    src={FoldingwallsImg2}
+                    caption="Scene transition example"
+                  />,
+                  <Image
+                    key="foldingwallsimg3"
+                    src={FoldingwallsImg3}
+                    caption="Wood texture test"
+                  />,
+                  <Image
+                    key="foldingwallsimg4"
+                    src={FoldingwallsImg4}
+                    caption="Scumbling underlayer of wood"
+                  />,
+                  <Image
+                    key="foldingwallsimg5"
+                    src={FoldingwallsImg5}
+                    caption="Initial test of folding mechanism"
+                  />,
+                  <Image
+                    key="foldingwallsimg6"
+                    src={FoldingwallsImg6}
+                    caption="Walls before wood edges"
+                  />,
+                ]}
+                details="I designed this multifunctional set piece for both the observatory and house settings in 'Silent Sky'. It's made of four foam panels that are hinged together. The observatory side is a faux wood texture that I painted, and the house side is peel and stick wallpaper. The wood trim on the sides was made by cutting a groove into a 1x2 using the table saw, and it keeps the foam panels from warping. The scene transition is done by two people and relatively fast."
+              />
+
+              <Card
+                style={{ gridArea: "boat" }}
+                variant="large"
+                name="Boat Set Piece"
+                date="Sep-Nov 2022"
+                images={[
+                  <Image
+                    key="boatimg1"
+                    src={BoatImg1}
+                    caption="Finished product"
+                  />,
+                  <AnimatedImage
+                    key="boatimg2"
+                    src={BoatImg2}
+                    caption="Demonstration of folding mechanism"
+                  />,
+                  <Image
+                    key="boatimg3"
+                    src={BoatImg3}
+                    caption="Alternate configuration of boat"
+                  />,
+                  <Image
+                    key="boatimg4"
+                    src={BoatImg4}
+                    caption="Folded up for moving/storage"
+                  />,
+                  <AnimatedImage
+                    key="boatimg5"
+                    src={BoatImg5}
+                    caption="SolidWorks model"
+                  />,
+                  <Image
+                    key="boatimg6"
+                    src={BoatImg6}
+                    caption="Dimensions of a couple of pieces"
+                  />,
+                  <Image
+                    key="boatimg7"
+                    src={BoatImg7}
+                    caption="Boat pieces before assembly"
+                  />,
+                ]}
+                details="I designed and built this set piece to represent an ocean liner in the play 'Silent Sky'. The design is two mirrored pieces that are each made of two geometric shapes made of foam glued together. It's extremely light, making scene transitions easy. I cut holes into the inside sides of the pieces so they were easier to carry. I modeled it in SolidWorks first and then exported drawings to help me cut out the pieces."
+              />
+
+              <Card
+                style={{ gridArea: "e80" }}
+                variant="large"
+                name="Autonomous Underwater Robot"
+                date="Mar-Apr 2022"
+                images={[
+                  <Image
+                    key="e80img1"
+                    src={E80Img1}
+                    caption="Robot design"
+                  />,
+                  <AnimatedImage
+                    key="e80img2"
+                    src={E80Img2}
+                    caption="Deployment at Dana Point"
+                  />,
+                  <Image
+                    key="e80img3"
+                    src={E80Img3}
+                    caption="Sensor data through four dives from surface to ~1.5m"
+                  />,
+                  <Image
+                    key="e80img4"
+                    src={E80Img4}
+                    caption="Pressure vs temperature correlations for four dives"
+                  />,
+                  <Image
+                    key="e80img5"
+                    src={E80Img5}
+                    caption="Microphone tests on land to verify sensor operation"
+                  />,
+                ]}
+                details="In my Experimental Engineering class, I worked with three other people to make an autonomous underwater robot. PVC tubes were used for the frame, and the electronics were kept in a sealed box with penetrators allowing access to the external sensors. We used a pressure sensor and thermistor for data collection, and microphones for navigation towards a speaker. The algorithm for navigation detected which of the microphones detected a chirp from the speaker first and turned in that direction. We tested our robot in a lake and at the beach. Unfortunately, the water flowing past the microphones seemed to continuously cause them to peak so navigation was unsuccessful, but we still got data and kept our electronics dry! "
+              />
+
+              <Card
+                style={{ gridArea: "hiddengears" }}
+                variant="large"
+                name="Hidden Gears Puzzle"
+                date="Apr-May 2022"
+                images={[
+                  <Image
+                    key="hiddengearsimg1"
+                    src={HiddenGearsImg1}
+                    caption="Finished product"
+                  />,
+                  <AnimatedImage
+                    key="hiddengearsimg2"
+                    src={HiddenGearsImg2}
+                    caption="Mechanism demo with cover off"
+                  />,
+                  <AnimatedImage
+                    key="hiddengearsimg3"
+                    src={HiddenGearsImg3}
+                    caption="Magnetic positioning demo"
+                  />,
+                  <Image
+                    key="hiddengearsimg4"
+                    src={HiddenGearsImg4}
+                    caption="Early prototype of detent mechanism"
+                  />,
+                  <Image
+                    key="hiddengearsimg5"
+                    src={HiddenGearsImg5}
+                    caption="Shafts and shaft collars assembled"
+                  />,
+                  <Image
+                    key="hiddengearsimg6"
+                    src={HiddenGearsImg6}
+                    caption="Unpainted work in progress"
+                  />,
+                  <Image
+                    key="hiddengearsimg7"
+                    src={HiddenGearsImg7}
+                    caption="Logic puzzle that gives colors for solution to puzzle"
+                  />,
+                ]}
+                details="For my club’s space themed escape room, I designed a puzzle where the player needs to figure out how much to push in three shafts so that all the gears engage and they’re able to reveal a code that unlocks the next puzzle. Because the puzzle would be unsolvable if the gears were misaligned as the user tries to push the shafts in, the gears must turn towards discrete rotations so they can always pass by each other. To accomplish this, I inset magnets at 8 points radially around each gear and attached an attracting magnet to the end of a screw on the shaft. I could then adjust the strength of the attraction by turning the screw slightly. This method was much more reliable than my prototype design which used a ball plunger - the deflection of the gear was nontrivial and the force required to depress the plunger was too high. The reveal of the code was done through a lead screw moving a plate into the view of a window on the side of the box. "
+              />
+
+              <Card
+                style={{ gridArea: "walls" }}
+                variant="large"
+                name="Temporary Walls"
+                date="Apr-May 2022"
+                images={[
+                  <Image
+                    key="wallsimg1"
+                    src={WallsImg1}
+                    caption="Finished product"
+                  />,
+                  <AnimatedImage
+                    key="wallsimg2"
+                    src={WallsImg2}
+                    caption="Door mechanism"
+                  />,
+                  <Image
+                    key="wallsimg3"
+                    src={WallsImg3}
+                    caption="Foam boards"
+                  />,
+                  <Image
+                    key="wallsimg4"
+                    src={WallsImg4}
+                    caption="Attaching plywood with construction adhesive"
+                  />,
+                  <Image
+                    key="wallsimg5"
+                    src={WallsImg5}
+                    caption="One of six spacers per wall segment"
+                  />,
+                  <Image
+                    key="wallsimg6"
+                    src={WallsImg6}
+                    caption="Constructing spacers with epoxy"
+                  />,
+                  <Image
+                    key="wallsimg7"
+                    src={WallsImg7}
+                    caption="One wall segment free-standing"
+                  />,
+                  <Image
+                    key="wallsimg8"
+                    src={WallsImg8}
+                    caption="Wall segment with door"
+                  />,
+                  <Image
+                    key="wallsimg9"
+                    src={WallsImg9}
+                    caption="All walls stored neatly on custom cart"
+                  />,
+                  <Image
+                    key="wallsimg10"
+                    src={WallsImg10}
+                    caption="Wall segment with cutout for two-sided maze"
+                  />,
+                  <Image
+                    key="wallsimg11"
+                    src={WallsImg11}
+                    caption="Early spacer design"
+                  />,
+                ]}
+                details="As club president of my college’s escape room club, I’m responsible for a lot of the infrastructure details of the escape room. One challenge was to divide one classroom into multiple rooms so that players could progress from one area of the room to another. These dividers needed to be lightweight, easy to set up, and free-standing (we were not allowed to attach anything to the walls or floors of the classroom). The solution I ended up at used large 0.25” thick foam boards reinforced with thin plywood around the edges, attached with custom PVC and wood spacers. The walls were arranged in a T shape to prevent them from tipping over. The door from one room to another was a foam panel with a 1x4 frame that fell away from the players into the next room once they solved a puzzle. The door was held in place with an electromagnet, and players needed to trigger two hall effect sensors with “bombs” to “explode” the wall. "
+              />
+              <Card
+                  style={{ gridArea: "solarcart" }}
+                  variant="large"
+                  name="Solar Powered Smoothie Cart"
+                  date="Mar 2021-Apr 2022"
+                  images={[
+                    <Image
+                      key="solarcartimg1"
+                      src={SolarCartImg1}
+                      caption="Finished product"
+                    />,
+                    <Image
+                      key="solarcartimg2"
+                      src={SolarCartImg2}
+                      caption="Folded for storage"
+                    />,
+                    <Image
+                      key="solarcartimg3"
+                      src={SolarCartImg3}
+                      caption="Electronics"
+                    />,
+                    <Image
+                      key="solarcartimg4"
+                      src={SolarCartImg4}
+                      caption="CAD of final design"
+                    />,
+                    <Image
+                      key="solarcartimg5"
+                      src={SolarCartImg5}
+                      caption="Earlier design with folding table"
+                    />,
+                    <Image
+                      key="solarcartimg6"
+                      src={SolarCartImg6}
+                      caption="Cabinet dimensions"
+                    />,
+                    <Image
+                      key="solarcartimg7"
+                      src={SolarCartImg7}
+                      caption="Building frame for solar panels"
+                    />,
+                    <Image
+                      key="solarcartimg8"
+                      src={SolarCartImg8}
+                      caption="Rolling stand in progress"
+                    />,
+                    <Image
+                      key="solarcartimg9"
+                      src={SolarCartImg9}
+                      caption="Electronics hookup guide"
+                    />,
+                    <Image
+                      key="solarcartimg10"
+                      src={SolarCartImg10}
+                      caption="Partway through build process"
+                    />,
+                    <Image
+                      key="solarcartimg11"
+                      src={SolarCartImg11}
+                      caption="Finished product"
+                    />,
+                  ]}
+                  details="I led the design and build of a solar-powered smoothie cart used to promote sustainability at events by using solar power to power a blender to make free smoothies. A group of four and I designed it in SolidWorks remotely and a similar sized (but different) group and I bought materials and built our design once we returned to campus in the fall of 2021. The design is able to fold the three solar panels up or down depending if it was being charged or stored. It also has a cabinet unit that stores the battery, charge controller, and inverter. "
               />
               <Card
                 style={{ gridArea: "clinic" }}
@@ -751,6 +1024,92 @@ function App() {
           <div className="tab__art">
             <h2>Art Projects</h2>
             <div className="card-grid">
+              
+            <Card
+                style={{ gridArea: "foldingwalls" }}
+                variant="large"
+                name="Folding Walls Set Piece"
+                date="Sep-Nov 2022"
+                images={[
+                  <Image
+                    key="foldingwallsimg1"
+                    src={FoldingwallsImg1}
+                    caption="Finished product"
+                  />,
+                  <AnimatedImage
+                    key="foldingwallsimg2"
+                    src={FoldingwallsImg2}
+                    caption="Scene transition example"
+                  />,
+                  <Image
+                    key="foldingwallsimg3"
+                    src={FoldingwallsImg3}
+                    caption="Wood texture test"
+                  />,
+                  <Image
+                    key="foldingwallsimg4"
+                    src={FoldingwallsImg4}
+                    caption="Scumbling underlayer of wood"
+                  />,
+                  <Image
+                    key="foldingwallsimg5"
+                    src={FoldingwallsImg5}
+                    caption="Initial test of folding mechanism"
+                  />,
+                  <Image
+                    key="foldingwallsimg6"
+                    src={FoldingwallsImg6}
+                    caption="Walls before wood edges"
+                  />,
+                ]}
+                details="I designed this multifunctional set piece for both the observatory and house settings in 'Silent Sky'. It's made of four foam panels that are hinged together. The observatory side is a faux wood texture that I painted, and the house side is peel and stick wallpaper. The wood trim on the sides was made by cutting a groove into a 1x2 using the table saw, and it keeps the foam panels from warping. The scene transition is done by two people and relatively fast."
+              />
+
+              <Card
+                style={{ gridArea: "boat" }}
+                variant="large"
+                name="Boat Set Piece"
+                date="Sep-Nov 2022"
+                images={[
+                  <Image
+                    key="boatimg1"
+                    src={BoatImg1}
+                    caption="Finished product"
+                  />,
+                  <AnimatedImage
+                    key="boatimg2"
+                    src={BoatImg2}
+                    caption="Demonstration of folding mechanism"
+                  />,
+                  <Image
+                    key="boatimg3"
+                    src={BoatImg3}
+                    caption="Alternate configuration of boat"
+                  />,
+                  <Image
+                    key="boatimg4"
+                    src={BoatImg4}
+                    caption="Folded up for moving/storage"
+                  />,
+                  <AnimatedImage
+                    key="boatimg5"
+                    src={BoatImg5}
+                    caption="SolidWorks model"
+                  />,
+                  <Image
+                    key="boatimg6"
+                    src={BoatImg6}
+                    caption="Dimensions of a couple of pieces"
+                  />,
+                  <Image
+                    key="boatimg7"
+                    src={BoatImg7}
+                    caption="Boat pieces before assembly"
+                  />,
+                ]}
+                details="I designed and built this set piece to represent an ocean liner in the play 'Silent Sky'. The design is two mirrored pieces that are each made of two geometric shapes made of foam glued together. It's extremely light, making scene transitions easy. I cut holes into the inside sides of the pieces so they were easier to carry. I modeled it in SolidWorks first and then exported drawings to help me cut out the pieces."
+              />
+
               <Card
                   style={{ gridArea: "organizer" }}
                   variant="small-2pic"

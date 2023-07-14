@@ -2852,11 +2852,11 @@
   integrity sha512-EEhsLsD6UsDM1yFhAvy0Cjr6VwmpMWqFBCb9w07wVugF7w9nfajxLuVmngTIpgS6svCnm6Vaw+MZhoDCKnOfsw==
 
 "@types/react-dom@^17.0.0":
-  version "17.0.9"
-  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.9.tgz#441a981da9d7be117042e1a6fd3dac4b30f55add"
-  integrity sha512-wIvGxLfgpVDSAMH5utdL9Ngm5Owu0VsGmldro3ORLXV8CShrL8awVj06NuEXFQ5xyaYfdca7Sgbk/50Ri1GdPg==
+  version "17.0.20"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.20.tgz#e0c8901469d732b36d8473b40b679ad899da1b53"
+  integrity sha512-4pzIjSxDueZZ90F52mU3aPoogkHIoSIDG+oQ+wQK7Cy2B9S+MvOqY0uEA/qawKz381qrEDkvpwyt8Bm31I8sbA==
   dependencies:
-    "@types/react" "*"
+    "@types/react" "^17"
 
 "@types/react-helmet@^6.1.5":
   version "6.1.5"
@@ -2880,16 +2880,25 @@
     "@types/react" "*"
 
 "@types/react-tabs@^2.3.3":
-  version "2.3.3"
-  resolved "https://registry.yarnpkg.com/@types/react-tabs/-/react-tabs-2.3.3.tgz#93536e06d616b98012e0574b9b3e280400152734"
-  integrity sha512-iKnx10tskHi9gpsvEAAJGpytbZXfcCINCFsEeYd9QN0mW7kGcUzh8Llgul1IqmFbKigXI/l3H3ej8ljWak2grw==
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/@types/react-tabs/-/react-tabs-2.3.4.tgz#b63662ee52e59a86ec33b78b9721d8163a46394c"
+  integrity sha512-HQzhKW+RF/7h14APw/2cu4Nnt+GmsTvfBKbFdn/NbYpb8Q+iB65wIkPHz4VRKDxWtOpNFpOUtzt5r0LRmQMfOA==
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^17.0.0":
+"@types/react@*":
   version "17.0.14"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.14.tgz#f0629761ca02945c4e8fea99b8177f4c5c61fb0f"
   integrity sha512-0WwKHUbWuQWOce61UexYuWTGuGY/8JvtUe/dtQ6lR4sZ3UiylHotJeWpf3ArP9+DSGUoLY3wbU59VyMrJps5VQ==
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    csstype "^3.0.2"
+
+"@types/react@^17", "@types/react@^17.0.0":
+  version "17.0.62"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.62.tgz#2efe8ddf8533500ec44b1334dd1a97caa2f860e3"
+  integrity sha512-eANCyz9DG8p/Vdhr0ZKST8JV12PhH2ACCDYlFw6DIO+D+ca+uP4jtEDEpVqXZrh/uZdXQGwk7whJa3ah5DtyLw==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -8679,9 +8688,9 @@ react-slick@^0.28.1:
     resize-observer-polyfill "^1.5.0"
 
 react-tabs@^3.2.2:
-  version "3.2.2"
-  resolved "https://registry.yarnpkg.com/react-tabs/-/react-tabs-3.2.2.tgz#07bdc3cdb17bdffedd02627f32a93cd4b3d6e4d0"
-  integrity sha512-/o52eGKxFHRa+ssuTEgSM8qORnV4+k7ibW+aNQzKe+5gifeVz8nLxCrsI9xdRhfb0wCLdgIambIpb1qCxaMN+A==
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/react-tabs/-/react-tabs-3.2.3.tgz#ccbb3e1241ad3f601047305c75db661239977f2f"
+  integrity sha512-jx325RhRVnS9DdFbeF511z0T0WEqEoMl1uCE3LoZ6VaZZm7ytatxbum0B8bCTmaiV0KsU+4TtLGTGevCic7SWg==
   dependencies:
     clsx "^1.1.0"
     prop-types "^15.5.0"
